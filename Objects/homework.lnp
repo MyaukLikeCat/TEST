@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\objects\stm32_equ.o"
+".\objects\startup.o"
+".\objects\main.o"
+--strict --scatter ".\Objects\homework.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\homework.map" -o .\Objects\homework.axf
